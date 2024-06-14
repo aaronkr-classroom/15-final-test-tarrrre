@@ -24,6 +24,7 @@ int main() {
 
 	// 데이터를 읽고 저장하기
 	while (record.read(student_file)) {
+		cout << "1";
 		maxlen = max(maxlen, record.getName().size());
 		students.push_back(record);
 	}
